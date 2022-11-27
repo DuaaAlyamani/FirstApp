@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toTopOf="@+id/Offer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/__"
+        tools:ignore="MissingConstraints,NotSibling"
+        android:contentDescription="@string/todo" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="5dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="130dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/WhiteText"
+
+            android:layout_height="wrap_content"
+
+
+            android:text="@string/hello_welcome"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/TuwaiqAcademy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/tuwaiq_academy"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+
+            />
+
+        <TextView
+            android:id="@+id/Trainig"
+            style="@style/WhiteText"
+
+            android:text="Trainig &amp; More \n \n  "
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/Offer"
+            style="@style/WhiteText"
+            android:layout_height="wrap_content"
+            android:text="What We Offer \n \nSpecialized in Training"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/includ"
+            style="@style/WhiteText"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+
+            android:text="What's included"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage"
+            tools:layout_editor_absoluteY="341dp" />
+
+
+        <TextView
+            android:id="@+id/list"
+            style="@style/WhiteText"
+
+            android:text="• Multi training experience.
+        \n• Bootcamps.
+        \n• Workshops.
+        \n• Webinars.
+        \n• Talks."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Bussines"
+            style="@style/WhiteText"
+
+            android:text="Business Details"
+            tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/BussinesDetalis"
+        style="@style/WhiteText"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="7dp"
+        android:text="Riyadh \n0123456789"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="22dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/todo1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/location"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="550dp"
+        android:contentDescription="@string/todo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/telephone"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/foot"
+        style="@style/WhiteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="© 2022 Tuwaiq Academy. All rights reserved"
+        android:textColor="#AA00FF"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
